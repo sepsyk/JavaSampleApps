@@ -16,3 +16,5 @@ Steps to run the service:
 2. Clone the sources from Github
 3. Build the sources: mvn clean install
 4. Run the service in an embedded Jetty container: mvn jetty:run
+
+Alternatively, use the Dockerfile placed in the root to run the service in Docker.
