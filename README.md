@@ -12,9 +12,13 @@ Java 7
 Maven 3
 
 Steps to run the service:
+
 1. Install prerequsites (Java, Maven)
+
 2. Clone the sources from Github
+
 3. Build the sources: mvn clean install
+
 4. Run the service in an embedded Jetty container: mvn jetty:run
 
 Alternatively, use the Dockerfile placed in the root to run the service in Docker.
