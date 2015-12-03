@@ -22,3 +22,5 @@ Steps to run the service:
 4. Run the service in an embedded Jetty container: mvn jetty:run
 
 Alternatively, use the Dockerfile placed in the root to run the service in Docker.
+
+Continuous Integration tests are done automatically by Travis CI, the Github integrated CI tool. The test procedure is described in .travis.yml file. Travis launches docker containers to test the maven build of the service, and runs JUnit tests. After that, integration tests are validating if the service is up and operating, by running simple curl based smoke tests against the container service endpoint.
