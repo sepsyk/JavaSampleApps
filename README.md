@@ -12,7 +12,15 @@ Java 7
 Maven 3
 
 Steps to run the service:
+
 1. Install prerequsites (Java, Maven)
+
 2. Clone the sources from Github
+
 3. Build the sources: mvn clean install
+
 4. Run the service in an embedded Jetty container: mvn jetty:run
+
+Alternatively, use the Dockerfile placed in the root to run the service in Docker.
+
+Continuous Integration tests are done automatically by Travis CI, the Github integrated CI tool. The test procedure is described in .travis.yml file. Travis launches docker containers to test the maven build of the service, and runs JUnit tests. After that, integration tests are validating if the service is up and operating, by running simple curl based smoke tests against the container service endpoint.
